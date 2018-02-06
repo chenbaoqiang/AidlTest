@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feinno.aidltest">
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- RcsService服务权限配置 -->
+    <permission
+        android:name="com.feinno.aidltest.service.PERMISSION"
+        android:protectionLevel="signature"></permission>
+    <uses-permission android:name="com.feinno.aidltest.service.PERMISSION"></uses-permission>
+
+    <application
+        android:name=".application.AidlApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.NoCheckAidlService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.NO_CHECK" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:name=".service.CheckAidlService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.feinno.aidltest.service.PERMISSION">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.CHECK" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.CustomService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.feinno.aidltest.service.PERMISSION">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.CUSTOM" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.MultiAidlService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.feinno.aidltest.service.PERMISSION">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.MULTI_AIDL" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.MessengerAidlService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.feinno.aidltest.service.PERMISSION">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.MESSENGER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".service.BookManagerService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.feinno.aidltest.service.PERMISSION">
+            <intent-filter>
+                <action android:name="com.feinno.aidltest.service.BOOK_MANAGER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

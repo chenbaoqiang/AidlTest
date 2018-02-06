@@ -1,0 +1,1 @@
+include ':app', ':aidl', ':third-app', ':common'

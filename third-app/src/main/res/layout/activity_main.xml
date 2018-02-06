@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feinno.third.ui.MainActivity">
+
+    <Button
+        android:id="@+id/id_NoCheckAidlService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="NoCheckAidlService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_CheckAidlService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="CheckAidlService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_CustomService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="CustomService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_MultiAidlService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="MultiAidlService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_MessengerAidlService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="MessengerAidlService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_BookManagerService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="BookManagerService"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+</LinearLayout>

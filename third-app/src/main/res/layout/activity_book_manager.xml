@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feinno.third.ui.MainActivity">
+
+    <Button
+        android:id="@+id/id_getBookList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="getBookList"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_addBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="addBook"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_registerListener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="registerListener"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_unregisterListener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="unregisterListener"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_addBookIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="addBookIn"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_addBookOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="addBookOut"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+    <Button
+        android:id="@+id/id_addBookInOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="addBookInOut"
+        android:textAllCaps="false"
+        android:textColor="@color/common_color_black" />
+
+</LinearLayout>
